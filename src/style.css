@@ -1,0 +1,143 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+
+}
+body {
+  background-image: url("https://66.media.tumblr.com/26d0c54cf4a8e1a91b7c5c46d9280be8/0267d5abf95bcc15-3b/s1280x1920/f09dc48af715d6f13687fbda3ada8ef2cebe900e.jpg");
+  height: auto;
+  weight: auto;
+}
+img {
+  display: block;
+  top: 25%;
+  height:35%;
+  width:35%;
+}
+input.missionButton {
+  display: block;
+  height:80px;
+  width:80px;
+
+}
+input.playButton {
+  display: block;
+  height:100px;
+  widht:100px;
+}
+input.storyButton {
+  display: block;
+  height:80px;
+  width:80px;
+
+}
+.modal {
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 3px solid white;
+  border-radius: 20px;
+  z-index:10;
+  width:500px;
+  max-width:70%;
+  background-color:goldenrod;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-header {
+  padding: 10px 15px;
+  display:flex;
+  justify-content:space-between;
+  border-bottom: 4px solid white;
+}
+.modal-header .title {
+  font-size: 1.25rem;
+  fontweight: bold;
+}
+.modal-header .close-button{
+  cursor:pointer;
+  border:none;
+  outline:none;
+  border-radius:15px;
+  background:transparent;
+ -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.modal-header .close-button:hover {
+  background:red;
+  color:white;
+}
+.moday-body {
+  padding: 10px 15px;
+}
+#overlay {
+ position: fixed;
+ opacity: 0;
+ transition: 200ms ease-in-out;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: rgba(0,0, 0,.5);
+ pointer-events: none;
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+span {
+  color:blue;
+}
+#modalButton{
+  cursor:pointer;
+  border:none;
+  outline:none;
+  border-radius:15px;
+  background:transparent;
+ -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#modalButton:hover {
+  background:red;
+  color:white;
+}
+#submitOutputBtn {
+  cursor:pointer;
+  border:none;
+  outline:none;
+  border-radius:5px;
+  background:cornflowerblue;
+}
+#submitOutputBtn:hover {
+  background:orangered;
+}
+#encodeBtn {
+  color:aliceblue;
+  font-weight: bold;
+  cursor:pointer;
+  border:none;
+  outline:none;
+  border-radius:5px;
+  background:cornflowerblue;
+}
+#encodeBtn:hover {
+  background:orangered;
+}
+#decodeBtn {
+  color:aliceblue;
+  font-weight: bold;
+  cursor:pointer;
+  border:none;
+  outline:none;
+  border-radius:5px;
+  background:cornflowerblue;
+}
+#decodeBtn:hover {
+  background:orangered;
+}

@@ -1,0 +1,21 @@
+-Recibir un valor en texto
+-Bloquear números (input string) y solo recibir UPPER CASE
+-Recibir valor numérico
+-Agregar  (cifrar/descifrar/otput text/submit)
+-Hacer inputs requeridos para poder proceder a encode decode o submit
+-Agregar evento onClick con funcion getDecodeInputValue y getEncodeInputValuen cada boton string y number.
+
+INDEX.JS
+-Agregar funcion guardarEncodeInput value para llevar los valores de  string y number a la funcion Encode de JS
+-Agregar funcion guardarDecodeInput value para llevar los valores de  string y number a la funcion Decode de JS
+
+
+         -Convertir de string a Array para tener los caracteres separados y declararlos como variable
+         -Obtener el código ASCII de las letras en array que se brinden
+        -Declarar que hay una variable de desplazamiento la cual es un input tipo numero también
+        -Declarar que habrá una función para la formula de descifrar
+         -Convertir a la posición del alfabeto que entendemos
+         -Aplicar formula
+ (Num.letraASCII – 65(AlfabetoComun)+n(valorDeDesplazamiento) )%26+ 65CodigoASCII
+        -Regresar como un output:
+         “Tu mensaje es:” </br> + formulaDeclarada

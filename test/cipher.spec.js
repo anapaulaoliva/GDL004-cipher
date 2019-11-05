@@ -1,3 +1,13 @@
+/*
+**`test/cipher.spec.js`**:
+
+En este archivo tendrás que completar las pruebas unitarias de las funciones
+`cipher.encode(offset, string)` y `cipher.decode(offset, string)` implementadas en `cipher.js`
+utilizando Jest.
+Tus pruebas unitarias deben dar un 70% en _coverage_ (cobertura), _statements_ (sentencias),
+_functions_ (funciones) y _lines_ (líneas); y un mínimo del 50% de _branches_ (ramas).
+*/
+
 global.window = global;
 require('../src/cipher');
 

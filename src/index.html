@@ -2,14 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>MOONCRYPT</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="cipher.js"></script>
+  <center>
+  <!-- This is the logo of the game Background-->
+  <nav></br></br>
+   <img  src="https://66.media.tumblr.com/78c79256a96feceeafcddcf8726e8284/1c994e1d95f55f82-8e/s1280x1920/d4e425977df2236f08cc78b95ba8f16549f71e20.png">
+  </nav>
+  <form id="mainButtons" method="" action="">
+   <input name="missionButton" type="image" src="https://66.media.tumblr.com/6831454d85e426f3e217c84471bedffe/e4d5d5d432426af1-d9/s1280x1920/18fd5edb1cb1962472e8ee2b40fc754142d104ab.png" height="80px" width:"80px">
+   <input name="playButton" type="image" src="https://66.media.tumblr.com/335262719efd40426978ec8a66d9bc0c/de9fc3829a9b10e3-08/s540x810/ba023f5b200e678b9ca0e746cfeaa69f3ac90ab2.png" height="100px" widht="100px"></button>
+   <input name="storyButton" type="image" src="https://66.media.tumblr.com/410b27d4b86cea54d7f2ce34a07bc0ff/7e0a7640980edd38-63/s1280x1920/8540864e8063215b226af01c1e205395b4dedd0e.png" height="80px" width="80px">
+  </form>
+
+   <button id="modalButton" data-modal-target="#modal"> ~.^</button>
+  <div class="modal" id="modal">
+   <div class="modal-header">
+    <div class="title" style="color:white">MOONCRYPT</div>
+     <button data-close-button class="close-button">&times;</button>
+   </div>
+
+  <div class="modal-body" style="color:white" style="padding:50%">
+    <h1> Let's Play! </h1>
+    <p style="font-size:19px">We need to type your own message to I.S.S. agents!<br><br></p><p>Type it, and then choose a number to encode or decode it.</br></br></p>
+   <form>
+      <input id="string" name="string" class="string" type="text" placeholder="Type your message here" pattern="[A-Z]*" required onkeyup="toUpperCase()" style="text-align:center">
+      <input id="offSet" class="offSet" type="number" placeholder="Select a number" required style="text-align:center"></br></br>
+
+     <button id="encodeBtn" class="encode" type="button"><p font-size:20px>Encode</p></button>
+     <button id="decodeBtn" class="decode" type="button"><p font-size:20px>Decode</p></button></br></br>
+
+    <section id="outputBox" class="outputBox" style="padding:5%">
+      <h2 id="outputText" class="outputBox"> </h2></br>
+      <h3 id= "outputResult"> </h3></br></br>
+     <button id="submitOutputBtn" class="outputBox" type="sumbit"><p style="font-weight:bold; size:30px; color:white">Submit!</p></button>
+   </section>
+   </form>
+
+   </div>
+  </div>
+  <div id="overlay"></div>
+
     <script src="index.js"></script>
+    <script src="cipher.js"></script>
   </body>
 </html>
