@@ -6,48 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>MOONCRYPT</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+
   </head>
   <body>
   <center>
   <!-- This is the logo of the game Background-->
-  <nav></br></br>
-   <img  src="https://66.media.tumblr.com/78c79256a96feceeafcddcf8726e8284/1c994e1d95f55f82-8e/s1280x1920/d4e425977df2236f08cc78b95ba8f16549f71e20.png">
+  <nav>
+   <img class="logo" src="https://66.media.tumblr.com/78c79256a96feceeafcddcf8726e8284/1c994e1d95f55f82-8e/s1280x1920/d4e425977df2236f08cc78b95ba8f16549f71e20.png">
   </nav>
-  <form id="mainButtons" method="" action="">
-   <input name="missionButton" type="image" src="https://66.media.tumblr.com/6831454d85e426f3e217c84471bedffe/e4d5d5d432426af1-d9/s1280x1920/18fd5edb1cb1962472e8ee2b40fc754142d104ab.png" height="80px" width:"80px">
-   <input name="playButton" type="image" src="https://66.media.tumblr.com/335262719efd40426978ec8a66d9bc0c/de9fc3829a9b10e3-08/s540x810/ba023f5b200e678b9ca0e746cfeaa69f3ac90ab2.png" height="100px" widht="100px"></button>
-   <input name="storyButton" type="image" src="https://66.media.tumblr.com/410b27d4b86cea54d7f2ce34a07bc0ff/7e0a7640980edd38-63/s1280x1920/8540864e8063215b226af01c1e205395b4dedd0e.png" height="80px" width="80px">
-  </form>
+  <form id="mainButtons" method="" action="" >
+    <img id="modalButton1" class="missionButton" data-modal-target="#modal1" src="https://66.media.tumblr.com/6831454d85e426f3e217c84471bedffe/e4d5d5d432426af1-d9/s1280x1920/18fd5edb1cb1962472e8ee2b40fc754142d104ab.png">
+    <img id="modalButton2" class="playButton" data-modal-target="#modal2" src="https://66.media.tumblr.com/335262719efd40426978ec8a66d9bc0c/de9fc3829a9b10e3-08/s540x810/ba023f5b200e678b9ca0e746cfeaa69f3ac90ab2.png">
+    <img id="modalButton3" class="storyButton" data-modal-target="#modal3" src="https://66.media.tumblr.com/410b27d4b86cea54d7f2ce34a07bc0ff/7e0a7640980edd38-63/s1280x1920/8540864e8063215b226af01c1e205395b4dedd0e.png">
+ </form>
 
-   <button id="modalButton" data-modal-target="#modal"> ~.^</button>
-  <div class="modal" id="modal">
+  <div class="modal" id="modal1">
    <div class="modal-header">
-    <div class="title" style="color:white">MOONCRYPT</div>
-     <button data-close-button class="close-button">&times;</button>
+    <div class="title">MISSION</div>
+     <button data-close-button class="close-button">&times;</button></div>
+   <div class="modal-body" style="color:white, padding:50%">
+     <h1> Hello, </h1>
+     <img style="width: 70px; max-width: 70%" src="https://66.media.tumblr.com/221a8f06ab27076d52a8366ade31b135/96e7e78b3a6ff2d1-09/s540x810/d822c83ab50d26ceeb06a1c4e10ff7f9bcdb2833.png">
+          <h2> We <strong> require </strong> your help!</h2>
+       <p style="font-size:20px">As a <b>N.A.S.A. agent,</b><br> you must be communicated with the <b>International Space Station;</b><br><br><br>But your messages <b>must be ciphered</b> to keep important information <strong>secret!</strong></p><br><br><br>
+    </div>
    </div>
+  <div id="overlay"></div>
 
-  <div class="modal-body" style="color:white" style="padding:50%">
-    <h1> Let's Play! </h1>
-    <p style="font-size:19px">We need to type your own message to I.S.S. agents!<br><br></p><p>Type it, and then choose a number to encode or decode it.</br></br></p>
-   <form>
-      <input id="string" name="string" class="string" type="text" placeholder="Type your message here" pattern="[A-Z]*" required onkeyup="toUpperCase()" style="text-align:center">
-      <input id="offSet" class="offSet" type="number" placeholder="Select a number" required style="text-align:center"></br></br>
+  <div class="modal" id="modal2">
+   <div class="modal-header">
+    <div class="title">MOONCRYPT</div>
+     <button data-close-button class="close-button">&times;</button></div>
+   <div class="modal-body" style="color:white, padding:50%">
+    <section id="inputBox" class="inputBox">
+     <h1> Let's Play! </h1>
+      <img style="width: 70px; max-width: 70%" src="https://66.media.tumblr.com/45894c86df8156606654557c96a8f8ba/c47273db5db5a598-a1/s540x810/d1832047e531d945610a234dfd5822658b863b79.png">
+        <p style="font-size:1rem"><b>Type what you want to say,<br> and then choose a number to encode or decode it.</b><br><br></p>
+        <input id="string" name="string" class="string" type="text" placeholder="Type your message here" style="text-align:center" autofocus>
+        <input id="offSet" class="offSet" type="number" placeholder="Select a number" style="text-align:center"><br><br>
 
-     <button id="encodeBtn" class="encode" type="button"><p font-size:20px>Encode</p></button>
-     <button id="decodeBtn" class="decode" type="button"><p font-size:20px>Decode</p></button></br></br>
+        <button id="encodeBtn" class="encode" type="button"><p font-size:20px>Encode</p></button>
+        <button id="decodeBtn" class="decode" type="button"><p font-size:20px>Decode</p></button>
+        <br><br>
+     </section>
 
-    <section id="outputBox" class="outputBox" style="padding:5%">
-      <h2 id="outputText" class="outputBox"> </h2></br>
-      <h3 id= "outputResult"> </h3></br></br>
-     <button id="submitOutputBtn" class="outputBox" type="sumbit"><p style="font-weight:bold; size:30px; color:white">Submit!</p></button>
-   </section>
-   </form>
-
+      <section id="outputBox" class="outputBox" style="padding:5%">
+       <img style="width: 70px; max-width: 70%" src="https://image.flaticon.com/icons/svg/1266/1266540.svg">
+       <h3 style="font-size:2rem">Your message is:</h3>
+        <h2 id= "outputResult" style="font-size:2rem"></h2>
+       <button id="submitOutputBtn" class="outputBox" type="sumbit" onClick="document.location.reload(true)"><p style="font-weight:bold; size:30px; color:white">Submit!</p></button>
+      </section>
    </div>
   </div>
-  <div id="overlay"></div>
+
+
+  <div class="modal" id="modal3">
+   <div class="modal-header">
+    <div class="title">STORY</div>
+     <button data-close-button class="close-button">&times;</button></div>
+  <div class="modal-body" style="color:white, padding:50%">
+    <h1> What's Crypt? </h1>
+    <img style="width: 70px; max-width: 70%" src="https://66.media.tumblr.com/8d331763c1bb0b82aae3324585332f77/8aac02b261b8ed09-e2/s540x810/edb894a34ae6f3591a86457315d21fdcba590ecf.png">
+    <p style="font-size:1.5rem; padding: 1%;">From the Greek <em>Kryptos</em>, it means <em>'Hidden.'</em></p>
+    <p style="font-size:1rem; padding: 1%;">It has represented, through time, a way to send <b>highly important information</b> from governments, countries or just people eachother.<br><br><br>The first known use of a modern cipher was by<br><strong>Julius Caesar</strong><em> (100 b.C.)</em><br> Who did not trusted his messengers when communicating with his governors and officers.</p><br>
+   </div>
+  </div>
+
 
     <script src="index.js"></script>
     <script src="cipher.js"></script>
+  </center>
   </body>
 </html>

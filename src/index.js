@@ -5,54 +5,56 @@ const overlay = document.getElementById('overlay');
 
 openModalButtons.forEach(button => {
   button.addEventListener('click', () =>{
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
-})
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
+});
 overlay.addEventListener('click', () =>{
-  const modals = document.querySelectorAll('.modal.active')
+  const modals = document.querySelectorAll('.modal.active');
   modals.forEach(modal => {
-    closeModal(modal)
-  })
-})
+    closeModal(modal);
+  });
+});
 closeModalButtons.forEach(button => {
   button.addEventListener('click', () =>{
-    const modal = button.closest('.modal')
-    closeModal(modal)
-  })
-})
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});
 
 function openModal(modal){
-  if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
+  if (modal == null) return; //MAYBE IT WONT WORK WITH THIS ;
+  modal.classList.add('active');
+  overlay.classList.add('active');
 }
 
 function closeModal(modal){
-  if (modal == null) return
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
-}
-//funcion to UPPER CASE STRING INPUT
-function toUpperCase() {
-  let stringUpperCase = document.getElementById("string");
-  stringUpperCase.value = stringUpperCase.value.toUpperCase();
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
 }
 //DOM to JS
 document.getElementById("encodeBtn").addEventListener("click", function(){
   let string = document.getElementById("string").value;
   let offSet = document.getElementById("offSet").value;
   let encodeResult = window.cipher.encode(string, offSet);
+  let outputBox = document.getElementById("outputBox");
+  let inputBox = document.getElementById("inputBox");
 
-  document.getElementById("outputText").innerHTML = "Values are: "  + string + " and: " + offSet;
-  document.getElementById("outputResult").innerHTML = "Mensaje cifrado es: " + encodeResult;
+  inputBox.style.display="none";
+  outputBox.style.display="block";
+  document.getElementById("outputResult").innerHTML =  encodeResult;
+
 });
 
 document.getElementById("decodeBtn").addEventListener("click", function(){
   let string = document.getElementById("string").value;
   let offSet = document.getElementById("offSet").value;
   let decodeResult = window.cipher.decode(string, offSet);
+  let outputBox = document.getElementById("outputBox");
+  let inputBox = document.getElementById("inputBox");
 
-  document.getElementById("outputText").innerHTML = "Values are: " + string + " and: " + offSet;
-  document.getElementById("outputResult").innerHTML = "Mensaje descifrado es: " + decodeResult;
-})
+  inputBox.style.display="none";
+  outputBox.style.display="block";
+  document.getElementById("outputResult").innerHTML = "Your message is:" + "<br>" + decodeResult;
+});

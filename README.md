@@ -1,9 +1,6 @@
-**`README.md`**:
 
-Debe contener lo siguiente:
-
-Nombre de proyecto: MOONCRYPT
-Resumen: Mooncrypt es una webApp pensada para una plataforma dedicada a juegos educativos para ninos con tematica sobre aeronautica y el espacio.
+- Nombre de proyecto: MOONCRYPT
+- Resumen: Mooncrypt es una webApp pensada para una plataforma dedicada a juegos educativos para ninos con tematica sobre aeronautica y el espacio.
 * La imagen final de tu proyecto.
 * Investigación UX:
   1. Usuarios:

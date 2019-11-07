@@ -1,47 +1,117 @@
-*, *::after, *::before {
+*, *::after, *::before { /*pseudo selectors */
   box-sizing: border-box;
-
 }
 body {
   background-image: url("https://66.media.tumblr.com/26d0c54cf4a8e1a91b7c5c46d9280be8/0267d5abf95bcc15-3b/s1280x1920/f09dc48af715d6f13687fbda3ada8ef2cebe900e.jpg");
-  height: auto;
-  weight: auto;
-}
-img {
-  display: block;
-  top: 25%;
-  height:35%;
-  width:35%;
-}
-input.missionButton {
-  display: block;
-  height:80px;
-  width:80px;
+  position: relative;
+  height: 300px;
+  width: 500px;
+  max-width: 80%;
+  z-index: -1;
 
 }
-input.playButton {
+img.logo {
   display: block;
-  height:100px;
-  widht:100px;
+  position: fixed;
+  top: 5%;
+  left: 33%;
+  width: 400px;
+  max-width:70%;
+  z-index: 1;
 }
-input.storyButton {
-  display: block;
-  height:80px;
-  width:80px;
 
+img.missionButton {
+  display: block;
+  position: fixed;
+  top: 60%;
+  left: 33%;
+  transform: translate(5%, -20%);
+  width: 80px;
+  max-width: 70%;
+  z-index: 2;
+}
+img.playButton {
+  display: block;
+  position: fixed;
+  top: 63%;
+  left: 42%;
+  transform: translate(-2%, -10%);
+  width: 150px;
+  max-width: 70%;
+  z-index: 2;
+}
+img.storyButton {
+  display: block;
+  position: fixed;
+  top: 59%;
+  left: 55%;
+  transform: translate(0%, -10%);
+  width: 80px;
+  max-width: 70%;
+  z-index: 2;
+}
+#modalButton1{
+  cursor:pointer;
+  border:none;
+  outline:none;
+  border-radius:15px;
+  background:transparent;
+ -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#modalButton1:hover {
+  background:cornflowerblue;
+  color:white;
+  width: 7%;
+}
+#modalButton2{
+  cursor:pointer;
+  border:none;
+  outline:none;
+  border-radius:15px;
+  background:transparent;
+ -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#modalButton2:hover {
+  background:red;
+  color:white;
+  width: 12.5%;
+}
+#modalButton3{
+  cursor:pointer;
+  border:none;
+  outline:none;
+  border-radius:15px;
+  background:transparent;
+ -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#modalButton3:hover {
+  background:goldenrod;
+  color:white;
+  width: 7%;
 }
 .modal {
   position:fixed;
+  color: white;
+  text-shadow: 1px 1px #7b7b7b;
   top:50%;
   left:50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
   border: 3px solid white;
   border-radius: 20px;
-  z-index:10;
-  width:500px;
+  z-index:4;
+  width:400px;
   max-width:70%;
-  background-color:goldenrod;
+  background-color: goldenrod;
 }
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
@@ -53,18 +123,18 @@ input.storyButton {
   border-bottom: 4px solid white;
 }
 .modal-header .title {
-  font-size: 1.25rem;
-  fontweight: bold;
+  font-size: 1.25rem; /*relative value to font size 1rem= 16px*/
+  font-weight: bold;
 }
 .modal-header .close-button{
-  cursor:pointer;
-  border:none;
-  outline:none;
-  border-radius:15px;
-  background:transparent;
- -webkit-transition-duration: 0.4s;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background: transparent;
+ -webkit-transition-duration: 0.4s; /*webkit is a rendering engine to Chrome and Safari*/
   transition-duration: 0.4s;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .modal-header .close-button:hover {
@@ -77,13 +147,14 @@ input.storyButton {
 #overlay {
  position: fixed;
  opacity: 0;
- transition: 200ms ease-in-out;
+ transition: 200ms ease-in-out; /*transition when a effect starts and ends*/
  top: 0;
  left: 0;
  right: 0;
  bottom: 0;
- background-color: rgba(0,0, 0,.5);
- pointer-events: none;
+ background-color: rgba(0,0, 0,.5); /*red, green, blue, opacity*/
+ pointer-events: none; /*what the pointer's going to do*/
+ z-index: 3;
 }
 #overlay.active {
   opacity: 1;
@@ -91,21 +162,6 @@ input.storyButton {
 }
 span {
   color:blue;
-}
-#modalButton{
-  cursor:pointer;
-  border:none;
-  outline:none;
-  border-radius:15px;
-  background:transparent;
- -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  font-size: 1rem;
-  font-weight: bold;
-}
-#modalButton:hover {
-  background:red;
-  color:white;
 }
 #submitOutputBtn {
   cursor:pointer;
@@ -140,4 +196,7 @@ span {
 }
 #decodeBtn:hover {
   background:orangered;
+}
+section.outputBox{
+  display: none;
 }
