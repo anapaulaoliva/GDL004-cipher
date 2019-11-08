@@ -56,5 +56,5 @@ document.getElementById("decodeBtn").addEventListener("click", function(){
 
   inputBox.style.display="none";
   outputBox.style.display="block";
-  document.getElementById("outputResult").innerHTML = "Your message is:" + "<br>" + decodeResult;
+  document.getElementById("outputResult").innerHTML = decodeResult;
 });

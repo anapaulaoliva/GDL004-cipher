@@ -20,6 +20,7 @@ describe('cipher', () => {
       expect(typeof cipher.encode).toBe('function');
     });
     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
+      expect(cipher.encode('ABCDEFGHIJKLMNOPQRSTUVWXYZ',33)).toBe('HIJKLMNOPQRSTUVWXYZABCDEFG');
     });
     it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" with offset 33', () => {
      expect(cipher.encode('abcdefghijklmnopqrstuvwxyz',33)).toBe('hijklmnopqrstuvwxyzabcdefg');
@@ -27,13 +28,15 @@ describe('cipher', () => {
      it('debería retornar " !@" para " !@"', () => {
       expect(cipher.encode(' !@',33)).toBe(' !@');
      });
+
   });
+
   describe('cipher.decode', () => {
     it('debería ser una función', () => {
       expect(typeof cipher.decode).toBe('function');
     });
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
-     //escribe aquí tus test
+      expect(cipher.decode('HIJKLMNOPQRSTUVWXYZABCDEFG',33)).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
     });
 
     it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "hijklmnopqrstuvwxyzabcdefg" with offset 33', () => {
