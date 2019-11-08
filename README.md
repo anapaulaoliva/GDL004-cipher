@@ -4,6 +4,7 @@
     * Clona tu `fork` a tu computadora.
 	* Usa el comando `$ npm start` para ver la interfaz del programa en el navegador.
     * Dirígete a  `http://localhost:5000` en tu navegador.
+    * Para ver el proyecto en `GitHub Pages` Haz click [aquí](https://anapaulaoliva.github.io/GDL004-cipher/src/):point_left:
 
 ## Cifrado César :scroll:
 
