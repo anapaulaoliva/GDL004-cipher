@@ -48,4 +48,4 @@ Mejoras a realizar en el proyecto:
 - Agregar caracteristica al background para que se mantenga en una posicion estatica sin cambiar al hacer scroll.
 - Mejorar el tamaño responsivo de los botones para que mantengan su proporción en distitos tamaños de la pantalla.
 - Implementar un botón con la función refresh para la página.
-- Cambiar la tipografía de los recuadros interactivos.
+- Cambiar la tipografía de las ventanas interactivas.
