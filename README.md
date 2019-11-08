@@ -12,8 +12,8 @@ Cifrar significa codificar. El cifrado César es uno de los primeros métodos de
 ## MOONCRYPT 🚀
 <abbr title="From Moon and Cryptology">MOONCRYPT</abbr> es una webApp pensada para ejecutarse en una plataforma educativa, basandose en una temática sobre Aeronáutica y el Espacio.
 
-###### -Imagen final del proyecto-
-![finalPrototype](https://user-images.githubusercontent.com/56927809/68487357-8609bb00-0208-11ea-8a01-73647e6b1fb2.JPG)
+###### Imagen del Prototipo Final 
+![finalPrototype](https://user-images.githubusercontent.com/56927809/68487463-bcdfd100-0208-11ea-9ef8-fe50b078944d.JPG)
 
 #### Investigación UX :busts_in_silhouette:
 + Está pensada para usuarios de 8 a 16 años.
@@ -47,6 +47,3 @@ Mejoras a realizar en el proyecto:
 - Mejorar el tamaño responsivo de los botones para que mantengan su proporción en distitos tamaños de la pantalla.
 - Implementar un botón con la función refresh para la página.
 - Cambiar la tipografía de los recuadros interactivos.
-
-###### Imagen del Prototipo Final 
-![finalPrototype](https://user-images.githubusercontent.com/56927809/68487463-bcdfd100-0208-11ea-9ef8-fe50b078944d.JPG)
