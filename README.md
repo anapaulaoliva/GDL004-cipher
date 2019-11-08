@@ -27,8 +27,10 @@ Cifrar significa codificar. El cifrado César es uno de los primeros métodos de
 	+ En la actualidad, existe poca atención a las páginas web educativas que no siguen el paso al diseño Web Responsivo. Es necesario que se complementen los propósitos de ambos campos para lograr hacer WebApps útiles y con contenido de calidad.
 	+ Mooncrypt permite que un caso práctico para una herramienta de encriptado sea fácil de entender para el usuario.
 
-###### -Primer prototipo en Balsamiq-
-- Main Page:
+##### Primer prototipo en Balsamiq
+
+###### Main Page
+
 ![BalsamiqPrototypeImg](https://user-images.githubusercontent.com/56927809/68487381-9457d700-0208-11ea-98a9-e18067a13734.JPG)
 
 - Full Prototype:
