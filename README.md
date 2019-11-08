@@ -30,8 +30,7 @@ Cifrar significa codificar. El cifrado César es uno de los primeros métodos de
 
 - Main Page:
 ![](./BalsamiqPrototypeImg.JPG)
-
-[^Full Prototype]: [FullPrototype](file:///C:/Users/Moda/myfirstrepository/GDL004-cipher/src/gitHubPrototypes/BalsamiqPrototypeMooncrypt.pdf "Full Prototype") 
+[here][2]
 
 
 #### Hacker Edition :sparkles:
@@ -48,3 +47,5 @@ Mejoras a realizar en el proyecto:
 - Cambiar la tipografía de los recuadros interactivos.
 
 ###### Imagen del Prototipo Final 
+
+[2]: http://daringfireball.net/projects/markdown/syntax "Markdown"
