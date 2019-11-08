@@ -15,7 +15,7 @@ Cifrar significa codificar. El cifrado César es uno de los primeros métodos de
 ###### -Imagen final del proyecto-
 ![](finalPrototype.JPG/Final)
 
-#### Investigación UX :speech_balloon:
+#### Investigación UX :busts_in_silhouette:
 + Está pensada para usuarios de 8 a 16 años.
 
 + Los objetivos en relación con el usuario abarcan:
@@ -40,7 +40,7 @@ Cifrar significa codificar. El cifrado César es uno de los primeros métodos de
 - [x] Minúsculas.
 - [x] Blankspace y caracteres especiales.
 
-#### Feedback :busts_in_silhouette:
+#### Feedback :speech_balloon:
 Mejoras a realizar en el proyecto:
 - Agregar caracteristica al background para que se mantenga en una posicion estatica sin cambiar al hacer scroll.
 - Mejorar el tamaño responsivo de los botones para que mantengan su proporción en distitos tamaños de la pantalla.
